@@ -319,7 +319,7 @@ class M_Akun extends CI_Model
 	}
 
 	function getAtletByJenis($jenis){
-    	$this->db->where('jenis',$jenis);
+    	$this->db->where('kategori',$jenis);
 		$data = $this->db->get("user");
 		return $data;
 	}
